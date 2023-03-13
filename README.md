@@ -14,6 +14,10 @@ Open Discord with the same account from which you obtained the token. Then go to
 |--|--|--|
 |calls spam|# of messages to send|delay between messages(in seconds)|
 
+### Example
+
+`!spam 4 1 abcd` This will spam abcd four times, with a one-second interval between messages. All of these messages WILL be sent from your account on your internet.
+
 #### Multiple Spaces
 You can have as many spaces as you want after the `!spam `
 
@@ -33,10 +37,6 @@ b
 ```
 
 You can also say `!spam a\nb 3 1` and it will the same thing (\n and a new line are interchangable)
-
-### Example
-
-`!spam 4 1 abcd` This will spam abcd four times, with a one-second interval between messages. All of these messages WILL be sent from your account on your internet.
 
 ## Troubleshooting
 
