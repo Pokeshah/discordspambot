@@ -14,17 +14,37 @@ Open Discord with the same account from which you obtained the token. Then go to
 |--|--|--|
 |calls spam|# of messages to send|delay between messages(in seconds)|
 
+#### Multiple Spaces
+You can have as many spaces as you want after the `!spam `
+
+`!spam a          3 1` will work the same as `!spam a 3 1`
+
+#### New Lines
+This code supports new lines. You can use
+```
+!spam a
+b 3 1
+```
+
+and it will send
+```
+a
+b
+```
+
+You can also say `!spam a\nb 3 1` and it will the same thing (\n and a new line are interchangable)
+
 ### Example
 
 `!spam 4 1 abcd` This will spam abcd four times, with a one-second interval between messages. All of these messages WILL be sent from your account on your internet.
 
 ## Troubleshooting
 
-### It was fast but slowed down/It didn't send the specified amount of messages
+### Got a 429
 
 Discord's servers are programmed to return the error message `429 Too Many Requests`. On the Discord client this can be seen as the `Woah There. Way too Spicy. You're sending messages way too quickly`  popup. As of now, the servers have no way of distinguishing between a legitimate discord message and one sent with this program. As a result, this is the quickest way to send messages(technically you can modify this library to use threading to send multiple messages at once, but that would just result in a 429 earlier).
 
-I decided that it would be a bad idea to implement 429 detection, since discord's severs behave in a really weird way. Instead, if we get a 429 that message will not be sent and we will not attempt to send it again. This helps in dealing with 429s.
+If it suddenly posts a message `got a 429 taking a break` it will wait for 10 seconds before sending another message. Although this sound counter intuitive it will post more messages in a shorter amount of time than the alternative.
 
 ### Doesn't work
 
@@ -32,4 +52,4 @@ You most likely configured it incorrectly, or Discord has changed its server cod
 
 ## WARNINGS
 
-THIS IS AGAINST DISCORD TERMS OF SERVICE. USE AT YOUR OWN RISK.
+**THIS IS AGAINST DISCORD TERMS OF SERVICE. USE AT YOUR OWN RISK.**
