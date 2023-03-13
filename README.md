@@ -32,4 +32,4 @@ You most likely configured it incorrectly, or Discord has changed its server cod
 
 ## WARNINGS
 
-THIS IS AGAINST DISCORD TERMS OF SERVIVE. USE AT YOUR OWN RISK.
+THIS IS AGAINST DISCORD TERMS OF SERVICE. USE AT YOUR OWN RISK.
