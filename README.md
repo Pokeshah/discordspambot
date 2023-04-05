@@ -42,7 +42,7 @@ You can also say `!spam a\nb 3 1` and it will the same thing (\n and a new line 
 
 ### Got a 429
 
-Discord's servers are programmed to return the error message `429 Too Many Requests`. On the Discord client this can be seen as the `Woah There. Way too Spicy. You're sending messages way too quickly`  popup. As of now, the servers have no way of distinguishing between a legitimate discord message and one sent with this program. As a result, this is the quickest way to send messages(technically you can modify this library to use threading to send multiple messages at once, but that would just result in a 429 earlier).
+Discord's servers are programmed to return the error message `429 Too Many Requests`. On the Discord client this can be seen as the `Woah There. Way too Spicy. You're sending messages way too quickly` popup. As of now, the servers have no way of distinguishing between a legitimate discord message and one sent with this program. As a result, this is the quickest way to send messages(technically you can modify this library to use threading to send multiple messages at once, but that would just result in a 429 earlier).
 
 If it suddenly posts a message `got a 429 taking a break` it will wait for 10 seconds before sending another message. Although this sound counter intuitive it will post more messages in a shorter amount of time than the alternative.
 
